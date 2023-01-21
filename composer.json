@@ -1,0 +1,47 @@
+{
+    "name": "guitarneck/opcalxs",
+    "description": "PHP frameworks to generate OpenXml document for Excel",
+    "version": "0.0.1",
+    "keywords": [
+        "php",
+        "OpenXML",
+        "Excel",
+        "xlsx"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/guitarneck/opcalxs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laurent S.",
+            "email": "guiarneck@free.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "sort-packages": true,
+    "require-dev": {},
+    "require": {},
+    "optimize-autoloader": true,
+    "autoload": {},
+    "suggest": {
+        "ext-dom": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*"
+    },
+    "scripts": {
+        "test": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -f run-tests.php"
+        ],
+        "publish": [
+            "@rebase-master",
+            "git push origin master"
+        ],
+        "rebase-master": "git pull --rebase origin master"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests!",
+        "publish": "github publishing"
+    }
+}

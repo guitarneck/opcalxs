@@ -1,0 +1,6 @@
+.DS_Store
+/vendor/
+.vscode/
+composer.lock
+composer *.json
+README *.md
